@@ -1,0 +1,77 @@
+@charset "UTF-8";
+/*Comentario css*/
+header nav {
+  font-family: Aldrich; }
+  header nav .navlink {
+    color: aliceblue; }
+  header nav a img {
+    width: 130px;
+    height: 100px; }
+  header nav ul li {
+    padding-left: 120px; }
+    header nav ul li:hover {
+      text-shadow: 2px 2px blue;
+      color: #c7e391; }
+
+header h1 {
+  margin-top: 100px;
+  margin-bottom: 70px;
+  text-align: center;
+  font-family: Aldrich; }
+
+header .h2Index {
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+  animation-name: agrandar;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+  font-family: Aldrich; }
+
+/*nav ul li a:hover{
+    text-shadow: 2px 2px blue;
+    color: rgb(199, 227, 145);
+    }
+*/
+main .flexCont {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 200px;
+  justify-content: center;
+  background-color: black;
+  /*Tamaño imágenes*/ }
+  main .flexCont .break {
+    flex-basis: 100%;
+    height: 0; }
+  main .flexCont .flexHijo1 img {
+    width: 600px;
+    height: 443px; }
+  main .flexCont .flexHijo2 img {
+    width: 600px;
+    height: 443px; }
+  main .flexCont .flexHijo3 img {
+    width: 600px; }
+  main .flexCont .flexHijo4 img {
+    width: 600px; }
+
+/*Animaciones*/
+@keyframes agrandar {
+  0%, 100% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.05, 1.05); } }
+
+@keyframes movimiento {
+  0%, 100% {
+    transform: translate(0, 0); }
+  50% {
+    transform: translate(30px, 0); } }
+
+footer {
+  padding: 20px;
+  bottom: 0;
+  font-family: orbitron;
+  text-align: center;
+  background-color: #18b5d1;
+  width: 100%;
+  position: static; }
